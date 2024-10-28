@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #ff5403;
+  }
+  
+  /* Formulário de filtro */
+  #filtro-periodo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #filtro-periodo label {
+    font-weight: bold;
+  }
+  
+  #filtro-periodo input[type="date"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #080831;
+    background-color: #080831;
+    color: #f0f0f0;
+  }
+  
+  #btn-filtrar {
+    padding: 8px 15px;
+    background-color: #ff5403;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn-filtrar:hover {
+    background-color: #e64900;
+  }
+  
+  /* Estilos para a tabela */
+  #tabela-registros {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #080831;
+    border-radius: 10px;
+  }
+  table{
+    border-radius: 10px;
+
+  }
+  
+  #tabela-registros thead {
+    background-color: #080831;
+    border-radius: 10px;
+
+  }
+  
+  #tabela-registros th,
+  #tabela-registros td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #080831;
+    border-radius: 10px;
+
+  }
+  
+  #tabela-registros th {
+    font-weight: bold;
+    color: #ff5403;
+  }
+  
+  #tabela-registros tbody tr:nth-child(even) {
+    background-color: #080831;
+  }
+  
+  #tabela-registros tbody tr:hover {
+    background-color: #080831;
+  }
+  
+  /* Estilos para o modal */
+  dialog#dialog-atualizar {
+    padding: 20px;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    max-width: 400px;
+    color: #f0f0f0;
+  }
+  
+  #dialog-atualizar label {
+    font-weight: bold;
+  }
+  
+  #novo-valor {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Botões do modal */
+  menu button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn-confirmar-atualizacao {
+    background-color: #f8b400;
+    color: #2b2b2b;
+  }
+  
+  #btn-confirmar-atualizacao:hover {
+    background-color: #eaa800;
+  }
+  
+  #btn-cancelar-atualizacao {
+    background-color: #666;
+    color: #f0f0f0;
+  }
+  
+  #btn-cancelar-atualizacao:hover {
+    background-color: #555;
+  }
+  

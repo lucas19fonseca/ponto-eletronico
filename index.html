@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Controle de Ponto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Redirecionamento para segunda página-->
+    <a href="RelatorioPontos.html" id="Histórico" target="_blank" >Histórico</a>
+    <div class="contato-container">
+      <div class="contato-info"></div>
+      <div id="formulario-contato">
+        <form action="#" method="POST">
+          <div class="data-hora">
+            <p id="dia-semana"></p>
+            <p id="dia-mes-ano"></p>
+            <p id="hora-min-seg"></p>
+          </div>
+          <div id="div-btn-bater-ponto">
+          </div>
+        </form>
+      </div>
+    </div>
+    <button id="btn-bater-ponto">Bater ponto!</button>
+
+    <div id="alerta-registro-ponto" class="hidden">
+      <p>Ponto registrado com sucesso</p>
+      <button id="alerta-registro-ponto-fechar">X</button>
+    </div>
+    
+    
+    <dialog id="dialog-ponto">
+      <header>
+          <p id="dialog-data"></p>
+          <p id="dialog-hora"></p>
+      </header>
+      <label for="data-ponto" id="escolha-data"><h2>Escolha a data e hora:</h2></label>
+      <input type="datetime-local" id="data-ponto" class="data-hora-selector">
+      <button id="btn-data-hora-atual">Agora</button>
+    
+      <select name="tipos-ponto" id="tipos-ponto" required>
+          <option value="entrada">Entrada</option>
+          <option value="intervalo">Intervalo</option>
+          <option value="volta-intervalo">Volta Intervalo</option>
+          <option value="saida">Saída</option>
+          <option value="falta">Falta</option>
+      </select>
+    
+      <label for="comentario-opcional-textarea" class="comentario"><h2>Comentário (opcional):</h2></label>
+      <div id="div-comentario-opcional">
+        <textarea id="comentario-opcional-textarea" rows="4" placeholder="Adicione um comentário..."></textarea>
+     </div>
+
+    <div id="div-justificativa-ponto" style="display: none;">
+      <label for="justificativa-ponto-textarea"class="comentario"><h2>Digite sua justificativa:</h2></label>
+      <textarea id="justificativa-ponto-textarea" rows="4" placeholder="Adicione uma justificativa..." required></textarea>
+   </div>
+  
+   <<div id="div-justificativa-ponto">
+    <label for="arquivoUpload" class="custom-file-upload">
+        <img src="https://img.icons8.com/?size=100&id=J8NwkM8zqPbc&format=png&color=000000" alt="Ícone de upload" style="width: 50px; height: 50px;">
+    </label>
+    <input type="file" id="arquivoUpload" name="arquivoUpload" accept=".pdf,.doc,.docx,.jpg,.png">
+  </div>
+  
+  
+      <button id="btn-dialog-bater-ponto">Registrar ponto</button>
+    
+      <p id="dialog-last-register"></p>
+      <button id="btn-dialog-fechar">X</button>
+    </dialog>
+  
+    <script src="js/index.js"></script>
+  </body>
+</html>
