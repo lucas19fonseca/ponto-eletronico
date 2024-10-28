@@ -60,16 +60,14 @@
       <textarea id="justificativa-ponto-textarea" rows="4" placeholder="Adicione uma justificativa..." required></textarea>
    </div>
   
-   <<div id="div-justificativa-ponto">
-    <label for="arquivoUpload" class="custom-file-upload">
-        <img src="https://img.icons8.com/?size=100&id=J8NwkM8zqPbc&format=png&color=000000" alt="Ícone de upload" style="width: 50px; height: 50px;">
-    </label>
-    <input type="file" id="arquivoUpload" name="arquivoUpload" accept=".pdf,.doc,.docx,.jpg,.png">
+   <div id="div-anexo-imagem">
+    <label for="anexo-imagem" id="anexar">Anexar imagem (opcional):</label>
+    <input type="file" id="anexo-imagem" accept="image/*" />
   </div>
   
   
-      <button id="btn-dialog-bater-ponto">Registrar ponto</button>
-    
+  <button id="btn-dialog-bater-ponto">Registrar ponto</button>
+  
       <p id="dialog-last-register"></p>
       <button id="btn-dialog-fechar">X</button>
     </dialog>

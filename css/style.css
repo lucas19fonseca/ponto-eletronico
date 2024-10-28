@@ -30,6 +30,15 @@ header{
     font-size: 30px;
     margin-right: 7em;
 }
+#anexo-imagem{
+    color: #fff;
+    font-size: 20px;
+
+}
+#anexar{
+    color: #ffff;
+    font-size: 2em;
+}
 #dialog-hora{
     color: #ffff;
     font-size: 30px;
