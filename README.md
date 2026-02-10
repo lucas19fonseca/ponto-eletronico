@@ -1,1 +1,1 @@
-# ponto-eletronico
+Desenvolvi um sistema de registro de ponto para empresas, iniciado como um projeto universitário e posteriormente aprimorado de forma independente. O sistema foi construído com HTML, CSS e JavaScript no front-end, e JavaScript no back-end, com o objetivo de facilitar o controle de entrada e saída de funcionários. Embora o projeto ainda não esteja totalmente finalizado, ele já contempla as principais funcionalidades necessárias para o gerenciamento de ponto, além de servir como base para futuras melhorias e escalabilidade.
